@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">HEAL</h2>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="booking.html">Booking</a>
+            <a href="therapy.html">Therapy</a>
+            <a href="consultation.html">Consultation</a>
+            <a href="surgery.html">Surgery</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <span class="password-toggle-icon">
+                <i class='bx bxs-lock-alt'></i></span>
+                
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="FP.html">Forget password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            
+        </form>
+    </div>
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <span class="password-toggle-icon">
+                <i class='bx bxs-lock-alt'></i></span>
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox"> I agree to the terms & conditions</label>
+            </div>
+
+            <button type="submit" class="btn">Sign up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

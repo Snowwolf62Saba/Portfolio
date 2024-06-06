@@ -1,0 +1,186 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Poppins", sans-serifs;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: rgb(27, 49, 90);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding: 1px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+  
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:#fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:  transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+.main_bg
+{
+    background-image: url(booking\ form\ 3.jpg);
+    max-width: 1280px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form
+{
+    width: 700px;
+}
+
+.form-text
+{
+    text-align: center;
+    margin: 40px 0;
+}
+.form-text h1 span img
+{
+    margin: 0 10px;
+
+}
+.form-text h1
+{
+    color: #ffffff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p
+{
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div
+{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input
+{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffffff;;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select
+{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: black;
+    border: 1px solid #e6e6dc;;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span
+{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #ece3e3;
+    font-size: 25px;
+}
+
+#submit
+{
+    width: 100%;
+    text-align: center;
+}
+#submit input
+{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: yellow !important;
+    color: black !important;
+    transition: all .3s;
+}
+#submit input:hover
+{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: black !important;
+    color: #fff !important;
+}
+#submit input:active
+{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) !important;
+    color: #fff !important;
+}
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+}
